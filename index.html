@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Cube</title>
+  <title>Ultimate Guide: Tribute</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="./media/img/favicon.ico">
@@ -25,82 +25,126 @@
   <div class="row flex-xl-nowrap">
 
     <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-      <div class="my-2 d-flex float-right">
-        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg></button>
-      </div>
       <nav class="collapse bd-links" id="bd-docs-nav">
         <ul class="nav nav-pills flex-column">
           <li class="nav-item"><a class="nav-link nav-h2" href="#introduction">Introduction</a></li>
-          <li class="nav-item"><a class="nav-link nav-h2" href="#examples">Examples</a></li>
+          <li class="nav-item"><a class="nav-link nav-h2" href="#cubeanatomy">The Cube</a></li>
+          <li class="nav-item"><a class="nav-link nav-h2" href="#rightyalg">Righty Alg</a></li>
+          <li class="nav-item"><a class="nav-link nav-h2" href="#daisy">The Daisy</a></li>
           <li class="nav-item"><a class="nav-link nav-h2" href="#credits">Credits</a></li>
         </ul>
       </nav>
     </div>
 
-    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-3 bd-content" role="main">
+    <main class="col" role="main">
 
       <h1>The Ultimate Guide to Solving the Cube: Tribute</h1>
+
       <h2 id="introduction">Introduction</h2>
-      <p>Have you been searching for the ultimate method for learning the cube? Me too. Unfortunately you landed here, so you'll have to settle for the The Ultimate Guide to Solving the Cube: Tribute</p>
-      <p>This is not the Ultimate Guide to Solving the Cube, it is just a tribute</p>
-      <p>The source is on <a target="_blank" href="https://github.com/cobbce/cube">GitHub</a></p>
 
+      <p>Have you been searching for the ultimate method for how to solve the Rubik's cube? Me too.</p>
+      <p>Unfortunately you landed here, so you'll have to settle for the The Ultimate Guide to Solving the Cube: Tribute</p>
+      <p>This is not the Ultimate Guide to Solving the Cube, it is just a tribute.</p>
 
-      <h2 id="examples">Examples</h2>
-<div class="row">
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=F2L|alg=U2 R U R' U R U' R'"></div>
-    <div class="text-nowrap">
-        <p class="name">F2L: both-top white-up</p>
-        <p class="alg">U2 (R U R') U (R U' R')</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=F2L|alg=y U2 L' U' L U' L' U L"></div>
-    <div class="text-nowrap">
-        <p class="name">F2L: both-top white-up</p>
-        <p class="alg">y U2 (L' U' L) U' (L' U L)</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=OLL|alg=F U R U' R' U R U' R' F'"></div>
-    <div class="text-nowrap">
-        <p class="name">OLL: 51</p>
-        <p class="alg">F (U R U' R') (U R U' R') F'</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=OLL|alg=R U R' U R U' B U' B' R'"></div>
-    <div class="text-nowrap">
-        <p class="name">OLL: 52</p>
-        <p class="alg">(R U R' U) R U' (B U' B') R'</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=PLL|alg=x R2 F R F' R U2 r' U r U2"></div>
-    <div class="text-nowrap">
-        <p class="name">PLL: Ja</p>
-        <p class="alg">x R2 F R F' R U2 r' U r U2</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-6">
-    <div class="roofpig" data-config="base=PLL|alg=R U R' F' R U R' U' R' F R2 U' R'"></div>
-    <div class="text-nowrap">
-        <p class="name">PLL: Jb</p>
-        <p class="alg">(R U R' F') (R U R' U') R' F R2 U' R'</p>
-    </div>
-  </div>
-</div>
+      <h2 id="cubeanatomy">The Anatomy of the Cube</h2>
+      <p>Every time a Rubik's cube is solved, an angel gets its wings.</p>
+      <h3>The centers don't move</h3>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig" data-config="base=SIMPLE | colored=F B L R U D | alg=y y y y x x x x"></div>
+          <div class="text">
+              <p class="alg">This means the yellow face is the one with the yellow center, the blue face is the one with the blue center, and the green face is the one with the white center. Just kidding, wanted to see whether you're still paying attention.</p>
+          </div>
+        </div>
+      </div>
+      <h3>The cube is solved in layers</h3>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig" data-config="base=SIMPLE | alg=D d U"></div>
+          <div class="text">
+              <p class="alg">Like onions. And ogres.</p>
+          </div>
+        </div>
+      </div>
+      <h2 id="rightyalg">The Righty Alg (aka Sexy Move)</h2>
+      <p>This algorithm contains within it the power of the universe. And that power can be yours for just four easy payments of $19.99. Act now, because this is a limited time offer and this alg won't be available for long!</p>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig" data-config="base=RIGHTY | alg=R U R' U'"></div>
+          <div class="text">  
+              <p class="alg">It may not look like much, but this little guy is all you need to solve the cube.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig" data-config="base=SIMPLE | speed=400 | alg=R U R' U' R U R' U' R U R' U' R U R' U' R U R' U' R U R' U'"></div>
+          <div class="text">
+              <p class="alg">And look, if you do it 6 times in a row, the cube will go back exactly the way it was!</p>
+              <p class="alg">Sound like magic?</p>
+              <p class="alg">That's because it is magic.</p>
+              <p class="alg">That's why they call it the magic cube</p>
+              <p class="alg">Try it. 6 times. Right now. It's magic.</p>
+          </div>
+        </div>
+      </div>
+      <h3>Lefty Alg</h3>
+      <div class="row">
+        <div class="col">
+            <div class="roofpig" data-config="base=RIGHTY | alg=L' U' L U"></div>
+            <div class="text">
+                <p class="alg">Righty algs little brother. He packs a wallop too!</p>
+            </div>
+          </div>
+      </div>
+
+      <h2 id="daisy">Daisy</h2>
+      <p>Now that you've mastered the righty alg and unlocked the power of the universe, let's start solving the cube. Actually, first let's stop to smell the daisies.</p>
+
+      <h3>The goal</h3>
+      <div class="row">
+        <div class="col">
+            <div class="roofpig" data-config="base=SIMPLE | colored=U | tweaks=D:u/e"></div>
+            <div class="text">
+                <p class="alg">For this step, move all of the white edges to make a daisy.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=BASE | colored=U | tweaks=D:u/e D:Ufr"></div>
+          <div class="text">
+              <p class="alg">Some white corners are fine</p>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="roofpig roofpig-150" data-config="base=BASE | colored=U DR/e | alg=R2 | flags=startsolved"></div>
+            <div class="text">
+                <p class="alg">Trick #1 -- look down</p>
+            </div>
+          </div>
+
+        <div class="col">
+            <div class="roofpig roofpig-150" data-config="base=BASE | colored=U DF/e | alg=F' | flags=startsolved | setupmoves=F'"></div>
+            <div class="text">
+                <p class="alg">Trick #2 -- look at the sides</p>
+            </div>
+          </div>
+
+        <div class="col">
+            <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U | tweaks=D:lU D:fU D:bU R:Ru D:rU | alg=R' U F' U'"></div>
+            <div class="text">
+                <p class="alg">Trick #99 -- what! how did you?!</p>
+            </div>
+          </div>
+      </div>
 
 
       <h2 id="credits">Credits and thanks!</h2>
       <p>This was made possible by:</p>
       <ul>
-        <li><b>Algorithms:</b> Dylan Wang (aka. J Perm) and his excellent <a target="_blank" href="https://www.youtube.com/channel/UCqTVfT9JQqhA6_Hi_h_h97Q">YouTube videos</a>.</li>
         <li><b>Website:</b> Forked from alonswartz's excellent <a target="_blank" href="http://www.alonswartz.org/cube/">algorithms site</a>.</li>
         <li><b>Cube animation:</b> Lars Petrus and his super slick <a target="_blank" href="https://github.com/larspetrus/Roofpig">Roofpig library</a>.</li>
-        <li><b>Design:</b> Based on the <a target="_blank" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap documentation</a>.</li>
-        <li><b>Templating:</b> Uses BottlePy <a target="_blank" href="https://bottlepy.org/docs/0.12/stpl.html">SimpleTemplate Engine</a>.</li>
         <li><b>Hosting:</b> Provided by <a target="_blank" href="https://cobbce.github.io/cube">GitHub pages</a>.</li>
       </ul>
 
@@ -135,6 +179,12 @@
 <script src="./media/js/bootstrap.min.js"></script>
 <script src="./media/js/roofpig_and_three.min.js"></script>
 <script>
+  ROOFPIG_CONF_BASE = "speed=1000"
+  ROOFPIG_CONF_SIMPLE = "base=BASE | hover=none"
+  ROOFPIG_CONF_RIGHTY = "base=SIMPLE | flags=showalg startsolved| colored=U*"
+
+  ROOFPIG_CONF_DAISY = "base=BASE | colored=D*/e U F R"
+
   ROOFPIG_CONF_F2L = "solved=U*|hover=none|colored=U-|flags=canvas";
   ROOFPIG_CONF_F2LB = "solved=U* RBD RBm LBD LBm FLD FLm|hover=none|flags=canvas";
   ROOFPIG_CONF_OLL = "solved=U-|hover=near|colored=u|flags=canvas";

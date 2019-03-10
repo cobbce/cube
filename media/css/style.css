@@ -33,8 +33,14 @@ body {
 }
 .roofpig { 
   float: left;
-  width: 100px; 
-  height: 120px;
+  width: 250px; 
+  height: 302px;
+  margin: 0px 20px 20px 0px;
+}
+.roofpig-150 {
+  float: left;
+  width: 150px; 
+  height: 202px;
   margin: 0px 20px 20px 0px;
 }
 .roofpig-help-button {

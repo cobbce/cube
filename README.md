@@ -1,4 +1,4 @@
-# Speed cube: animated visual algorithms
+# The Ultimate Guide To Solving the Cube: Tribute
 
 Have you been searching for the ultimate method for learning the cube? Me too. Unfortunately you landed here, so you'll have to settle for the The Ultimate Guide to Solving the Cube: Tribute
 
