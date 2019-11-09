@@ -53,7 +53,7 @@
         <div class="col">
           <div class="roofpig" data-config="base=SIMPLE | colored=F B L R U D | alg=y y y y x x x x"></div>
           <div class="text">
-              <p class="alg">This means the yellow face is the one with the yellow center, the blue face is the one with the blue center, and the green face is the one with the white center. Just kidding, wanted to see whether you're still paying attention.</p>
+              <p class="alg">This means the yellow face is the one with the yellow center, the blue face is the one with the blue center, and the green face is the one with the white center (just kidding).</p>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
         <div class="col">
             <div class="roofpig" data-config="base=RIGHTY | alg=L' U' L U"></div>
             <div class="text">
-                <p class="alg">Righty algs little brother. He packs a wallop too!</p>
+                <p class="alg">Righty algs kid sibling. It packs a wallop too!</p>
             </div>
           </div>
       </div>
@@ -102,41 +102,101 @@
       <h3>The goal</h3>
       <div class="row">
         <div class="col">
-            <div class="roofpig" data-config="base=SIMPLE | colored=U | tweaks=D:u/e"></div>
-            <div class="text">
-                <p class="alg">For this step, move all of the white edges to make a daisy.</p>
-            </div>
+          <div class="roofpig" data-config="base=SIMPLE | colored=U | tweaks=D:u/e"></div>
+          <div class="text">
+              <p class="alg">For this step, move all of the white edges up to make a daisy.</p>
           </div>
-      </div>
-
-      <div class="row">
+        </div>
         <div class="col">
-          <div class="roofpig roofpig-150" data-config="base=BASE | colored=U | tweaks=D:u/e D:Ufr"></div>
+          <div class="roofpig" data-config="base=BASE | colored=U | tweaks=D:u/e D:Ufr D:Ulf"></div>
           <div class="text">
               <p class="alg">Some white corners are fine</p>
           </div>
         </div>
+      </div>
 
+      <div class="row">
         <div class="col">
-            <div class="roofpig roofpig-150" data-config="base=BASE | colored=U DR/e | alg=R2 | flags=startsolved"></div>
-            <div class="text">
-                <p class="alg">Trick #1 -- look down</p>
-            </div>
+          <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U DR/e | alg=R2 | flags=startsolved"></div>
+          <div class="text">
+              <p class="alg">Tip #0 -- check the bottom</p>
           </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U DF/e | alg=F' | flags=startsolved | setupmoves=F'"></div>
+          <div class="text">
+              <p class="alg">Tip #1 -- check the sides</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U D*/e | alg=U' F' | flags=startsolved | setupmoves=L2 B2 R2 F' U"></div>
+          <div class="text">
+              <p class="alg">Tip #2 -- make room</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U | tweaks=D:lU D:fU D:bU R:Ru D:rU | alg=R' U F' U'"></div>
+          <div class="text">
+              <p class="alg">Tip #99 -- what! how did you?!</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="col">
-            <div class="roofpig roofpig-150" data-config="base=BASE | colored=U DF/e | alg=F' | flags=startsolved | setupmoves=F'"></div>
-            <div class="text">
-                <p class="alg">Trick #2 -- look at the sides</p>
-            </div>
-          </div>
+      <h2 id="cross">The Cross</h2>
+      <p>Okay enough with the flowers. Let's get down to business... (to defeat, the Huns).</p>
 
+      <h3>The goal</h3>
+      <div class="row">
         <div class="col">
-            <div class="roofpig roofpig-150" data-config="base=SIMPLE | colored=U | tweaks=D:lU D:fU D:bU R:Ru D:rU | alg=R' U F' U'"></div>
-            <div class="text">
-                <p class="alg">Trick #99 -- what! how did you?!</p>
-            </div>
+          <div class="roofpig" data-config="base=SIMPLE | colored=*/m D*/e | setupmoves= x2 | alg=y y y y"></div>
+          <div class="text">
+              <p class="name">Like this</p>
           </div>
+        </div>
+        <div class="col">
+          <div class="roofpig" data-config="base=SIMPLE | colored=*/m D*/e | setupmoves=D2 x2"></div>
+          <div class="text">
+              <p class="name">But not this</p>
+              <p class="alg">This doesn't count.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=WHITECROSS | alg= U' F2 | setupmoves=L2 R2 D2 F2 B2 U'"></div>
+          <div class="text">
+              <p class="alg">Tip #1 -- spin the top to match the edge to its center </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=WHITECROSS | alg= U U R2 | setupmoves=L2 R2 D2 F2 B2 U' U' F2"></div>
+          <div class="text">
+              <p class="alg">Step 2 -- flip it</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=WHITECROSS | alg= y U U R2 | setupmoves=L2 R2 D2 F2 B2 U' U' F2 U U R2"></div>
+          <div class="text">
+              <p class="alg">Test test test</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-150" data-config="base=WHITECROSS | alg= y U U R2 | setupmoves=L2 R2 D2 F2 B2 U' U' F2 U U R2 y U U R2"></div>
+          <div class="text">
+              <p class="alg">Test test test</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Victory Dance</h3>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig" data-config="base=WHITECROSS | alg=y y y y| setupmoves=x2"></div>
+          <div class="text">
+              <p class="name">Like this</p>
+          </div>
+        </div>
       </div>
 
 
@@ -181,7 +241,8 @@
 <script>
   ROOFPIG_CONF_BASE = "speed=1000"
   ROOFPIG_CONF_SIMPLE = "base=BASE | hover=none"
-  ROOFPIG_CONF_RIGHTY = "base=SIMPLE | flags=showalg startsolved| colored=U*"
+  ROOFPIG_CONF_RIGHTY = "base=SIMPLE | flags=showalg | colored=U*"
+  ROOFPIG_CONF_WHITECROSS = "base=SIMPLE | colored=*/m D*/e | flags=startsolved"
 
   ROOFPIG_CONF_DAISY = "base=BASE | colored=D*/e U F R"
 
