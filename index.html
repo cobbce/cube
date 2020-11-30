@@ -444,7 +444,7 @@
 
       <!--
 
-        Yellow Cross
+        Yellow Cross (OLL Step 1)
 
       -->
 
@@ -533,7 +533,7 @@
 
       -->
 
-      <h2 id="oll">OLL (Make the top Yellow)</h2>
+      <h2 id="oll">Make the top Yellow (OLL Step 2)</h2>
 
       <h3>The goal</h3>
       <p>We're almost there!</p>
@@ -637,6 +637,7 @@
 
         H perm        : M2 U M2 U2 M2 U M2
         E perm        : x' R U' R' D R U R' D' R U R' D R U' R' D' x
+        Z perm        : M2 U M2 U M' U2 M2 U2 M' U2
 
       -->
       <h2 id="pll1">Fix the Corners (PLL Step 1)</h2>
@@ -712,21 +713,81 @@
       <p>And dying in your beds, many years from now, would you be willin' to trade ALL the days, from this day to that, for one chance, just one chance, to come back here and tell that cube that it may take our sanity, but it'll never take... OUR FREEDOM!</p>
       <div class="row">
         <div class="col">
-          <div class="roofpig" data-config="base=PLL2"></div>
+          <div class="roofpig" data-config="base=PLL1"></div>
           <div class="text">
-              <p>Note that all the corners are solved, while the edges (the middle pieces) are still mixed up.</p>
+              <p>Too bad that stickerless cubes are so popular these days. Otherwise we wouldn't have to go to all this trouble.</p>
           </div>
         </div>
       </div>
 
       <h3>The "Sandwich" Alg <span style="font-size:16px">(or "Ua" alg for the unimaginative)</span></h3>
-      <p>R U' R U R U R U' R' U' R2</p>
+      <p><span class="green">(R U')</span> <span class="red">(R U) (R U)</span> <span class="green">(R U')</span> R' U' R2</p>
+      <p>See, the <span class="red">(R U)</span>'s are sandwiched between the <span class="green">(R U')</span>s. Sandwich alg. Brilliant.</p>
       <p></p>
       <div class="row">
         <div class="col">
           <div class="roofpig" data-config="base=PLL1 | flags=showalg | alg = R U' R U R U R U' R' U' R2"></div>
         </div>
       </div>
+
+      <h3>Details</h3>
+      <p>This is it. You will need to sandwich your heart out 1x, 2x, or 3x times depending on how luck (and fate) would have it.</p>
+      <p>Find the case that matches and start there</p>
+
+      <h3>Case 1 - no solved "bar"</h3>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig roofpig-180" data-config="base=PLL1 | setupmoves = M2 U M2 U M' U2 M2 U2 M' U2 U | alg = R U' R U R U R U' R' U' R2"></div>
+          <div class="text">
+            <p class="alg"><b>Step 1</b> - Do "Sandwich" facing any ol' way you want. The result will be at least one solved "bar". Now head over to Case 2!</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Case 2 - solved "bar"</h3>
+      <p>The final stretch, maybe you should take a break and grab a sandwich.</p>
+      <div class="row">
+        <div class="col">
+          <div class="roofpig roofpig-180" data-config="base=PLL1 | setupmoves = M2 U M2 U M' U2 M2 U2 M' U2 U     R U' R U R U R U' R' U' R2 | alg = U2"></div>
+          <div class="text">
+              <p class="alg"><b>Step 1</b> - Rotate the top until the solved "bar" is in the back (if it isn't already).</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-180" data-config="base=PLL1 | setupmoves = M2 U M2 U M' U2 M2 U2 M' U2 U     R U' R U R U R U' R' U' R2    U2 | alg = R U' R U R U R U' R' U' R2"></div>
+          <div class="text">
+              <p class="alg"><b>Step 2</b> - Do the "Sandwich". No, I'm not talking about the dance move. Did it work!? Is it solved???</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-180" data-config="base=PLL1 | setupmoves = M2 U M2 U M' U2 M2 U2 M' U2 U     R U' R U R U R U' R' U' R2    U2    R U' R U R U R U' R' U' R2 | alg = R U' R U R U R U' R' U' R2"></div>
+          <div class="text">
+              <p class="alg"><b>Step 3</b> - Still here? Welp, there's only two choices. Either we scramble the cube and start over, or we remember the old saying, "When life gives you lemons, do the Sandwich alg."</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="roofpig roofpig-180" data-config="base=PLL1 | setupmoves = U' | alg = U"></div>
+          <div class="text">
+              <p class="alg"><b>Step 4</b> - AUF. No that's not a bad word, it just means "Adjust Upper Face", like what you do after you fall face first in a mud puddle."</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Victory Dance</h2>
+      <p>Hail the conquering hero... da da da da da da... - The Genie</p>
+        <div class="col">
+          <div class="roofpig" data-config="base=SIMPLE | alg = y2 y2 x2 x2"></div>
+          <div class="text">
+              <p class="alg">That's a wrap!</p>
+          </div>
+        </div>
+      </div>
+
+      <!--
+
+        Credits wooohoooo
+
+      -->
 
       <h2 id="credits">Credits and thanks!</h2>
       <p>This was made possible by:</p>
@@ -747,8 +808,8 @@
 <script src="./media/js/bootstrap.min.js"></script>
 <script src="./media/js/roofpig_and_three.min.js"></script>
 <script>
-  // ROOFPIG_CONF_BASE = "speed=1000"
-  ROOFPIG_CONF_BASE = "speed=300"
+  ROOFPIG_CONF_BASE = "speed=1000"
+  // ROOFPIG_CONF_BASE = "speed=300"
   ROOFPIG_CONF_SIMPLE = "base=BASE | hover=none"
   ROOFPIG_CONF_RIGHTY = "base=SIMPLE | flags=showalg | colored=U*"
   ROOFPIG_CONF_WHITECROSS = "base=SIMPLE | colored=*/m D*/e | flags=startsolved"
@@ -757,7 +818,6 @@
   ROOFPIG_CONF_YELLOWCROSS = "base=SIMPLE | flags=showalg startsolved | colored=D* */em";
   ROOFPIG_CONF_OLL = "base=BASE | hover = 2 | flags=showalg startsolved | colored= u */m Fld Fd FRd Fl FR Rd Rdb Rb";
   ROOFPIG_CONF_PLL1 = "base=BASE | hover = 2 | flags=showalg startsolved | colored= U* */m Fld Fd FRd Fl FR Rd Rdb Rb";
-  ROOFPIG_CONF_PLL2 = "base=BASE | hover = 2 | flags=showalg startsolved";
 </script>
 </body>
 </html>
