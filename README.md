@@ -9,8 +9,8 @@ This is not the Ultimate Guide to Solving the Cube, it is just a tribute</p>
 This was made possible by:
 
 - Algorithms: Dylan Wang (aka. J Perm) and his excellent [YouTube videos][youtube_jperm].
-- Website: Forked from alonswartz's excellent [alonswartz_site][algorithms site]
-- Cube animation: Lars Petrus and his super slick [Roofpig library][roofpig].
+- Website: Forked from alonswartz's [alonswartz_site][algorithms site]
+- Cube animation: Lars Petrus [Roofpig library][roofpig].
 - Design: Based on the [Bootstrap documentation][bootstrap].
 - Templating: Uses BottlePy [SimpleTemplate Engine][bottlepy_stpl].
 - Hosting: Provided by GitHub ([source][source], [hosted][hosted]).
